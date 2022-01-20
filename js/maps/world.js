@@ -8,7 +8,7 @@ export default {
         "AAAAAEAAAAAAAAAA",
         "AAAAAAAAAAAAAAAA",
         "AAAAAAAAAAAAAAAA",
-        "AAAAAAAAAZZZZZZZ",
+        "AAAAAAAAAAZZZZZZ",
         "AAAAAAAAYYYYYYYY",
         "AAAAAAAAZZZZZZZZ",
         "AAAAAAAAYYYYYYYY",
