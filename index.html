@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="world">
+            <canvas id="canvasMap" class="canvas" ></canvas>
+            <canvas id="canvasChar" class="canvas" ></canvas>
+        </div>
+        <div id="mat" class="screensize">
+            <div id="battle" class="screensize">
+                <div id="enemy">
+                    <img src="images/enemy/31.png" />
+                </div>
+                <div id="message">
+                    ボスがあらわれた！<br>
+                    ５５５ポイントのダメージを与えた
+                </div>
+            </div>
+        </div>
+        <div id="ui" class="screensize">
+            <div>
+                <button class="btnOpen">Open</button>
+                <button class="btnClose">Close</button>
+                <button class="btnMapWorld">WORLD</button>
+                <button class="btnMapTown1">town1</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
