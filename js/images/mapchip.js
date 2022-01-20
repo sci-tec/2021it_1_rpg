@@ -1,0 +1,32 @@
+export default {
+    aa: { id: "aa", label: "草原", img: "aa.png", isBlock: false },
+    ab: { id: "ab", label: "木（通れる）", img: "ab.png", isBlock: false },
+    a: { id: "a", label: "木（通れない）", img: "B.png", isBlock: true },
+    //木２種類（通れる木と通れない木）
+    //黒い背景も二種類（通れるのと通れないの）
+    C: { id: "C", label: "山", img: "C.png", isBlock: false },
+    D: { id: "D", label: "土", img: "D.png", isBlock: false },
+    E: { id: "E", label: "城下町の床", img: "E.png", isBlock: false },
+    F: { id: "F", label: "焚火", img: "F.png", isBlock: true },
+    G: { id: "G", label: "城中床", img: "G.png", isBlock: false },
+    H: { id: "H", label: "城中床外枠", img: "H.png", isBlock: false },
+    I: { id: "I", label: "地下階段", img: "I.png", isBlock: false },
+    J: { id: "J", label: "家床", img: "J.png", isBlock: false },
+    K: { id: "K", label: "王座への階段", img: "K.png", isBlock: false },
+    L: { id: "L", label: "王座", img: "L.png", isBlock: true },
+    M: { id: "M", label: "家パーツ（左上）", img: "M.png", isBlock: true },
+    N: { id: "N", label: "家パーツ（真ん中上）", img: "N.png", isBlock: true },
+    O: { id: "O", label: "家パーツ（右上）", img: "O.png", isBlock: true },
+    P: { id: "P", label: "家パーツ（左上から二段下）", img: "P.png", isBlock: true },
+    Q: { id: "Q", label: "家パーツ（真ん中から二段下）", img: "Q.png", isBlock: true },
+    R: { id: "R", label: "家パーツ（右上から二段下）", img: "R.png", isBlock: true },
+    S: { id: "S", label: "家パーツ（左上から三段下）", img: "S.png", isBlock: true },
+    T: { id: "T", label: "家パーツ（真ん中上から三段下）", img: "T.png", isBlock: true },
+    U: { id: "U", label: "家パーツ（右上から三段下）", img: "U.png", isBlock: true },
+    V: { id: "V", label: "家パーツ（左右下）", img: "V.png", isBlock: true },
+    W: { id: "W", label: "家パーツ（真ん中下）", img: "W.png", isBlock: false },
+    X: { id: "X", label: "地下水", img: "X.png", isBlock: true },
+    Y: { id: "Y", label: "森パーツ（下）", img: "Y.png", isBlock: false },
+    Z: { id: "Z", label: "森パーツ（上）", img: "Z.png", isBlock: false },
+}
+
