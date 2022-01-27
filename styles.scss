@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('fonts/PixelMplus10-Regular.ttf');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: MyFont;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+.container {
+    display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+    width: 100%;
+    height: 100%;
+
+    #world {
+        position: relative;
+        .canvas, .screensize {
+            position: absolute;
+        }
+    }
+    #mat {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #0007;
+        width: 100%;
+        height: 100%;
+    }
+    #talk {
+        position: fixed;
+        top: 0;
+        left: 0;
+        // background-color: #0007;
+        width: 100%;
+        height: 100%;
+    }
+    #ui {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+#mat, #talk {
+    display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+    width: 100%;
+    height: 100%;
+}
+
+#mat {
+    #battle {
+        #enemy, #message {
+            background-color: #000a;
+            border-radius: 20px;
+            border: solid 5px #fff;
+        }
+        #enemy {
+            width: 280px;
+            height: 240px;
+            margin: 0 auto;
+            margin-top: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        #message {
+            width: 400px;
+            height: 160px;
+            margin: 0 auto;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 20px;
+            line-height: 150%;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+    }
+}
+
+// <div id="talk" class="overlay">
+// <div id="battle" class="screensize">
+//     <div id="enemy">
+//         <img src="images/enemy/01.jpg" />
+//     </div>
+//     <div id="message">
+//         ボスがあらわれた！<br>
+//         ５５５ポイントのダメージを与えた
+//     </div>
+// </div>
+// </div>
+
+#talk {
+    #battle {
+        #enemy, #message {
+            background-color: #000a;
+            border-radius: 20px;
+            border: solid 5px #fff;
+        }
+        #enemy {
+            opacity: 0;
+            width: 280px;
+            height: 240px;
+            margin: 0 auto;
+            margin-top: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        #message {
+            width: 400px;
+            height: 160px;
+            margin: 0 auto;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 20px;
+            line-height: 150%;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+    }
+}

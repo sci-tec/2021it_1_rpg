@@ -52,13 +52,21 @@ html, body {
   height: 100%;
 }
 
+.container #talk {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .container #ui {
   position: fixed;
   top: 0;
   left: 0;
 }
 
-#mat {
+#mat, #talk {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +107,38 @@ html, body {
 }
 
 #mat #battle #message {
+  width: 400px;
+  height: 160px;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 150%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+}
+
+#talk #battle #enemy, #talk #battle #message {
+  background-color: #000a;
+  border-radius: 20px;
+  border: solid 5px #fff;
+}
+
+#talk #battle #enemy {
+  opacity: 0;
+  width: 280px;
+  height: 240px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#talk #battle #enemy img {
+  width: 100%;
+  height: 100%;
+}
+
+#talk #battle #message {
   width: 400px;
   height: 160px;
   margin: 0 auto;
