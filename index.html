@@ -14,7 +14,18 @@
             <canvas id="canvasMap" class="canvas" ></canvas>
             <canvas id="canvasChar" class="canvas" ></canvas>
         </div>
-        <div id="mat" class="screensize">
+        <div id="talk" class="overlay">
+            <div id="battle" class="screensize">
+                <div id="enemy">
+                    <img src="images/enemy/01.jpg" />
+                </div>
+                <div id="message">
+                    ボスがあらわれた！<br>
+                    ５５５ポイントのダメージを与えた
+                </div>
+            </div>
+        </div>
+        <div id="mat" class="overlay">
             <div id="battle" class="screensize">
                 <div id="enemy">
                     <img src="images/enemy/31.png" />
@@ -25,10 +36,11 @@
                 </div>
             </div>
         </div>
-        <div id="ui" class="screensize">
+        <div id="ui" class="overlay">
             <div>
-                <button class="btnOpen">Open</button>
-                <button class="btnClose">Close</button>
+                <button class="btnField">Field</button>
+                <button class="btnBattle">Battle</button>
+                <button class="btnTalk">Talk</button>
                 <button class="btnMapWorld">WORLD</button>
                 <button class="btnMapTown1">town1</button>
             </div>
