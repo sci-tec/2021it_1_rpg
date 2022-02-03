@@ -21,9 +21,8 @@ export default {
         }        
     },
     events: [
-        {
-            x: 0, y: 0, 
-            goto: { name: "world", x: 8, y: 8 }
-        }
+        { x:  9, y: 13, goto: { name: "sironaibu", x: 11, y: 0}},
+        { x: 10, y: 13, goto: { name: "sironaibu", x: 12, y: 0}},
+        { x: 11, y: 13, goto: { name: "sironaibu", x: 13, y: 0}},
     ],
 }
