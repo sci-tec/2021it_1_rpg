@@ -21,8 +21,8 @@ export default {
     },
     events: [
         {
-            x: 0, y: 0, 
-            goto: { name: "world", x: 8, y: 8 }
+            x: 26, y: 0, 
+            goto: { name: "shirononaibu", x: 0, y: 0 }
         }
     ],
 }
