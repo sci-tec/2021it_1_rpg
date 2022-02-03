@@ -21,4 +21,7 @@ export function develop() {
     $("#ui .btnMapTown1").click(()=>{
         refreshMap("test2", 1, 1);
     });
+    $("#ui .btnShop").click(()=>{
+        G.refresh(CONFIG.MODE_SHOP);
+    });
 }

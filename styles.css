@@ -189,4 +189,13 @@ html, body {
           box-sizing: border-box;
   padding: 15px;
 }
+
+#mat_shop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0007;
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
