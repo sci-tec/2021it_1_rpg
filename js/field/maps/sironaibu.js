@@ -1,12 +1,21 @@
 export default {
     images: [
-        "aaaa",
-        "aaaa",
-        "aaaa",
-        "aaaa",
-        "aaaa",
-        "aaaa",
-    ],
+        "al,am,am,am,am,am,am,am,am,am,ak,aj,aj,aj,ak,am,am,am,am,am,am,am,am,am,am",
+        "am,am,am,am,am,am,am,am,am,am,ak,aj,aj,aj,ak,am,am,am,am,am,am,am,am,am,am",
+        "am,am,am,am,am,am,am,am,am,am,ak,aj,aj,aj,ak,am,am,am,am,am,am,am,am,am,am",
+        "am,am,am,am,am,am,am,am,am,am,ak,aj,aj,aj,ak,am,am,am,am,am,am,am,am,am,am",
+        "am,am,am,am,am,am,am,am,am,am,ak,aj,aj,aj,ak,am,am,am,am,am,am,am,am,am,am",
+        "am,am,am,am,am,am,am,am,am,am,ak,aj,aj,aj,ak,am,am,am,am,am,am,am,am,am,am",
+        "ak,ak,ak,ak,ak,ak,ak,ak,ak,ak,ak,aj,aj,aj,ak,ak,ak,ak,ak,ak,ak,ak,ak,ak,ak",
+        "aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj",
+        "aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj,aj",
+        "ak,ak,ak,ak,ak,ak,ak,ak,ak,ak,ak,aj,aj,aj,ak,ak,ak,ak,ak,ak,ak,ak,ak,ak,ak",
+        "am,am,am,am,am,am,am,am,am,am,ak,aj,aj,aj,ak,am,am,am,am,am,am,am,am,am,am",
+        "am,am,am,am,am,am,am,am,am,am,ak,aj,aj,aj,ak,am,am,am,am,am,am,am,am,am,am",
+        "am,am,am,am,am,am,am,am,am,am,ak,aj,aj,aj,ak,am,am,am,am,am,am,am,am,am,am",
+        "am,am,am,am,am,am,am,am,am,am,ak,aj,aj,aj,ak,am,am,am,am,am,am,am,am,am,am",
+        "am,am,am,am,am,am,am,am,am,am,ak,aj,aj,aj,ak,am,am,am,am,am,am,am,am,am,am",
+        "am,am,am,am,am,am,am,am,am,am,ak,aj,aj,aj,ak,am,am,am,am,am,am,am,am,am,am",    ],
     sounds: {
         bgm: {
             id: "world"

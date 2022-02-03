@@ -19,9 +19,24 @@ const sounds = {
         },
     },
     se: {
-        step_slow: {
-            file: 'SE/step_slow.wav'
-        }
+        damegeuke: { file: 'SE/damegeuke.mp3' },
+        escape: { file: 'SE/escape.mp3' },
+        honoomahou: { file: 'SE/honoomahou.mp3' },
+        kaihuku: { file: 'SE/kaihuku.mp3' },
+        kaihukumahou: { file: 'SE/kaihukumahou.mp3' },
+        kaminarimahou: { file: 'SE/kaminarimahou.mp3' },
+        kasoruidou: { file: 'SE/kasoruidou.mp3' },
+        ken_atk3: { file: 'SE/ken_atk3.mp3' },
+        Kettei: { file: 'SE/Kettei.mp3' },
+        koorimahou: { file: 'SE/koorimahou.mp3' },
+        kyanseru: { file: 'SE/kyanseru.mp3' },
+        mahou1: { file: 'SE/mahou1.mp3' },
+        mahou2: { file: 'SE/mahou2.mp3' },
+        Openmenu: { file: 'SE/Openmenu.mp3' },
+        setteki: { file: 'SE/setteki.mp3' },
+        step_slow: { file: 'SE/step_slow.mp3' },
+        sudekougeki: { file: 'SE/sudekougeki.mp3' },
+        ziko: { file: 'SE/ziko.mp3' },
     }
 }
 

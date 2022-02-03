@@ -26,6 +26,11 @@
             </div>
         </div>
         <div id="mat" class="overlay">
+            <div id="command">
+                ゆうしゃ<br>
+                HP:40<br>
+                MP:20<br>
+            </div>
             <div id="battle" class="screensize">
                 <div id="enemy">
                     <img src="images/enemy/31.png" />
@@ -34,6 +39,27 @@
                     ボスがあらわれた！<br>
                     ５５５ポイントのダメージを与えた
                 </div>
+               
+                <div id="battle_command">
+                    <div class="commands">
+                        <div id="cmd1" data-se="ken_atk3" class="command">たたかう</div>
+                        <div id="cmd2" data-se="Openmenu" class="command">どうぐ</div>
+                        <div id="cmd3" data-se="escape" class="command">にげる</div>
+                    </div>
+                </div>
+                <!-- <div id="battle_command">
+                    こうげき<br>
+                    とくぎ<br>
+                    まほう<br>
+                    ぼうぎょ<br>
+                </div> -->
+            </div>
+
+        </div>
+        <div id="mat_shop" class="overlay">
+            <div id="shop" class="screensize">
+                <h1>ショップ</h1>
+                <div>ショップです</div>
             </div>
         </div>
         <div id="ui" class="overlay">
@@ -43,6 +69,7 @@
                 <button class="btnTalk">Talk</button>
                 <button class="btnMapWorld">WORLD</button>
                 <button class="btnMapTown1">town1</button>
+                <button class="btnShop">shop</button>
             </div>
         </div>
     </div>
