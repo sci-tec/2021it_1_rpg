@@ -5,6 +5,7 @@ import { field_init, field_keyDown } from './field/field.js'
 import { battle_init, battle_keyDown } from './battle/battle.js'
 import { story_init, story_keyDown } from './story/story.js'
 import { talk_init, talk_keyDown } from './talk/talk.js'
+import { shop_init, shop_keyDown } from './shop/shop.js'
 
 import { develop } from './_develop.js'
 
@@ -44,6 +45,7 @@ function refresh(mode = G.currentMode, option = {}) {
 
     $("#talk").hide();
     $("#mat").hide();
+    $("#mat_shop").hide();
     // console.log("refresh", option, G.currentMode);
     switch(G.currentMode) {
         case CONFIG.MODE_STORY: 
@@ -56,6 +58,9 @@ function refresh(mode = G.currentMode, option = {}) {
             break;
         case CONFIG.MODE_TALK: 
             talk_init(option)
+            break;
+        case CONFIG.MODE_SHOP: 
+            shop_init(option)
             break;
         default : 
             break;

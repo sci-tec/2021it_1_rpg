@@ -43,8 +43,20 @@ export default {
         //    enemy: { id: 1 }
         //},
         {
-            x: 5, y: 5,
-            goto: { name: "zyoukamati", x: 8, y: 1 }
+            x: 26, y: 13, 
+            goto: { name: "mura", x: 25, y: 1 }
+        },
+        {
+            x: 22, y: 15,
+            goto: { name: "mura", x: 0, y: 8 }
+        },
+        {
+            x: 2, y: 12,
+            enemy: { id: 1 }
+        },
+        {
+            x: 7, y: 4,
+            goto: { name: "zyoukamati", x: 16, y: 13 }
         },
     ]
 }
