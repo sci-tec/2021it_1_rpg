@@ -87,7 +87,43 @@ html, body {
             padding: 15px;
         }
     }
+    #command { 
+        position: relative;
+        top: 200px;
+        right: 250px;
+        font-size: 25px;
+        width: auto;
+    }
+    #battle_command {
+        position: relative;
+        height: auto;
+        bottom: 180px;
+        right: 280px;
+        width: 140px;
+    }     
 }
+
+#mat #battle #message, #command, #battle_command {
+    width: 400px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 150%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 15px;
+  }
+
+  #mat #command, #battle_command {
+    background-color: #000a;
+    border-radius: 20px;
+    border: solid 5px #fff;
+    .command {
+        cursor: pointer;
+    }
+  }
 
 // <div id="talk" class="overlay">
 // <div id="battle" class="screensize">
