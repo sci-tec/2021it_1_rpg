@@ -8,5 +8,6 @@ export const CONFIG = {
     MODE_STORY: "story",
     MODE_BATTLE: "battle",
     MODE_TALK: "talk",
+    MODE_SHOP: "shop",
 }
 
