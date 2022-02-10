@@ -7,11 +7,12 @@ import { story_init, story_keyDown } from './story/story.js'
 import { talk_init, talk_keyDown } from './talk/talk.js'
 import { shop_init, shop_keyDown } from './shop/shop.js'
 
-import { develop } from './_develop.js'
+import { develop, devConsole } from './_develop.js'
 
 $(function(){
     develop();
     init();
+    devConsole();
 });
 
 function init() {
@@ -27,6 +28,7 @@ function init() {
     refresh();
 
     addEventListener( "keydown", keydown );
+
 }
 
 function keydown( event ) {
@@ -37,6 +39,7 @@ function keydown( event ) {
         case CONFIG.MODE_TALK: talk_keyDown(event.keyCode); break;
         default : break;
     }
+    devConsole();
 }
 
 function refresh(mode = G.currentMode, option = {}) {
