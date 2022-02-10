@@ -6,22 +6,28 @@ import { refreshMap } from './field/field.js'
 // import { story_init, story_keyDown } from './story/story.js'
 
 export function develop() {
-    $("#ui .btnField").click(()=>{
-        G.refresh(CONFIG.MODE_FIELD);
+    $("#ui .btnDev").click(()=>{
+        refreshMap("test", 4, 6);
     });
-    $("#ui .btnBattle").click(()=>{
-        G.refresh(CONFIG.MODE_BATTLE);
+    
+    $("#ui #tagCopy").click((e)=>{
+        document.execCommand("copy");
     });
-    $("#ui .btnTalk").click(()=>{
-        G.refresh(CONFIG.MODE_TALK);
-    });
-    $("#ui .btnMapWorld").click(()=>{
-        refreshMap(CONFIG.START_MAP, 3, 5);
-    });
-    $("#ui .btnMapTown1").click(()=>{
-        refreshMap("test2", 1, 1);
-    });
-    $("#ui .btnShop").click(()=>{
-        G.refresh(CONFIG.MODE_SHOP);
-    });
+
+    var listener = function(e){
+        e.clipboardData.setData("text/plain" , getCopyString());    
+        e.preventDefault();
+    }
+
+    document.addEventListener("copy" , listener);
+
+}
+
+export function devConsole() {
+    $("#console").html(`x:${G.player_x} y:${G.player_y} mapId:${G.currentMapId} mode:${G.currentMode}`);
+    $("#tagForCopy").html(getCopyString(G.currentMapId));
+}
+
+function getCopyString(to = "行き先マップID") {
+    return `{ x: ${G.player_x}, y: ${G.player_y}, goto: { name: '${to}', x: 0, y: 0 }},`;
 }

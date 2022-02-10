@@ -22,7 +22,7 @@ export default {
     events: [
         {
             x: 26, y: 0, 
-            goto: { name: "shirononaibu", x: 0, y: 0 }
+            goto: { name: "sironaibu", x: 0, y: 0 }
         }
     ],
 }
