@@ -27,9 +27,17 @@ export default {
         }        
     },
     events: [
-        {
-            x: 0, y: 0,
-            goto: { name: "world", x: 5, y: 6 }
-        }
+        { x: 14, y:  2, goto: { name: 'sironaibu', x: 11, y: 15 }},        
+        { x: 15, y:  2, goto: { name: 'sironaibu', x: 12, y: 15 }},        
+        { x: 16, y:  2, goto: { name: 'sironaibu', x: 12, y: 15 }},        
+        { x: 17, y:  2, goto: { name: 'sironaibu', x: 13, y: 15 }},
+        { x: 31, y:  9, goto: { name: 'urarozi',   x:  0, y:  4 }},   
+        { x: 31, y: 10, goto: { name: 'urarozi',   x:  0, y:  5 }},   
+        { x: 31, y: 11, goto: { name: 'urarozi',   x:  0, y:  6 }},   
+        { x: 31, y: 12, goto: { name: 'urarozi',   x:  0, y:  7 }},
+        { x: 14, y: 19, goto: { name:  'world',    x:  7, y:  4 }},
+        { x: 15, y: 19, goto: { name:  'world',    x:  7, y:  4 }},
+        { x: 16, y: 19, goto: { name:  'world',    x:  7, y:  4 }},
+        { x: 17, y: 19, goto: { name:  'world',    x:  7, y:  4 }},
     ],
 }
