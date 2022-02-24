@@ -34,7 +34,7 @@ const sounds = {
         mahou2: { file: 'SE/mahou2.mp3' },
         Openmenu: { file: 'SE/Openmenu.mp3' },
         setteki: { file: 'SE/setteki.mp3' },
-        step_slow: { file: 'SE/step_slow.mp3' },
+        step_slow: { file: 'SE/step_slow.wav' },
         sudekougeki: { file: 'SE/sudekougeki.mp3' },
         ziko: { file: 'SE/ziko.mp3' },
     }

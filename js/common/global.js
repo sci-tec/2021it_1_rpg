@@ -12,6 +12,7 @@ export default {
     player: null,
     player_x: 0,
     player_y: 0,
+    direction: "",
     currentMapId: "",
     currentMode: "",
     mapchips: mapchip,
