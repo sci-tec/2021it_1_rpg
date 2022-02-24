@@ -16,11 +16,12 @@ export default {
         }        
     },
      events: [
-         {
-             x: 0, y: 4,
-             goto: { name: "zyoukamati", x: 2, y: 11 }
-         }
-    //     {
+        { x:  0, y: 3, goto: { name: 'world', x: 40, y: 19 }},    //     {
+        { x:  0, y: 4, goto: { name: 'world', x: 40, y: 19 }},    //     {
+        { x:  0, y: 5, goto: { name: 'world', x: 40, y: 19 }},    //     {
+        { x: 18, y: 3, goto: { name: 'world', x: 40, y: 19 }},    //     {
+        { x: 18, y: 4, goto: { name: 'world', x: 40, y: 19 }},    //     {
+        { x: 18, y: 5, goto: { name: 'world', x: 40, y: 19 }},    //     {
     //         x: 14, y: 5,
     //         goto: { name: "world", x: 3, y: 1 }
     //     },
