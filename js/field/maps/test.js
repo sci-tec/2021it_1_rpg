@@ -1,10 +1,10 @@
 export default {
     images: [
         "aa,aa,aa,aa,aa,aa,aa,aa",
-        "ab,aa,ab,aa,ab,aa,ab,aa",
+        "ak,aa,ak,aa,ak,aa,ak,aa",
         "aa,aa,aa,aa,aa,aa,aa,aa",
         "aa,aa,aa,aa,aa,aa,aa,aa",
-        "aa,ab,aa,ab,aa,ab,aa,aa",
+        "aa,ak,aa,ak,aa,ak,aa,aa",
         "aa,aa,aa,aa,aa,aa,aa,aa",
         "aa,aa,aa,aa,aa,aa,aa,aa",
         "aa,ca,aa,ca,aa,ca,aa,aa",

@@ -2,7 +2,7 @@ export default {
     images: [
         "cj,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,cj",
         "cj,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,ac,cj",
-        "cj,ad,ad,ad,ad,ad,ah,ah,ah,ah,ah,ah,ah,ad,ad,ad,ad,ad,cj",
+        "cj,ac,ac,ac,ac,ac,ah,ah,ah,ah,ah,ah,ah,ac,ac,ac,ac,ac,cj",
         "cj,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,cj",
         "cj,ah,ah,ah,ah,ah,ah,ah,ah,ae,ah,ah,ah,ah,ah,ah,ah,ah,cj",
         "cj,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,ah,cj",
