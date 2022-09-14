@@ -2,6 +2,21 @@ import TALK from './talk/talk.js'
 
 export default {
     TALK: TALK,
+
+    LEVELS: [
+
+        { lv:1, exp: 0, hp: 20, mp: 5, ap: 2 },
+        { lv:2, exp: 5, hp: 30, mp: 10, ap: 3 },
+        { lv:3, exp: 15, hp: 35, mp: 15, ap: 5 },
+        { lv:4, exp: 40, hp: 50, mp: 20, ap: 7 },
+        { lv:5, exp: 100, hp: 63, mp: 25, ap: 10 },
+        { lv:6, exp: 165, hp: 70, mp: 30, ap: 13 },
+        { lv:7, exp: 270, hp: 80, mp: 35, ap: 15 },
+        { lv:8, exp: 370, hp: 85, mp: 40, ap: 0 }, // W_WP 不明
+        { lv:9, exp: 470, hp: 90, mp: 45, ap: 0 }, // W_WP 不明
+        { lv:10, exp: 600, hp: 100, mp: 50, ap: 0 }, // W_WP 不明
+    ],
+
     WEAPON: {
         w01: { name: "鉄の棒", image: "w01.png", point: 3 },
         w02: { name: "錆びた剣", image: "w02.png", point: 5 },
