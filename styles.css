@@ -117,7 +117,7 @@ html, body {
   padding: 15px;
 }
 
-#mat #command {
+#mat #playerInfo {
   position: relative;
   top: 200px;
   right: 250px;
@@ -133,26 +133,24 @@ html, body {
   width: 140px;
 }
 
-#mat #battle #message, #command, #battle_command {
-  width: 400px;
-  height: 160px;
+#mat #battle #message, #playerInfo, #battle_command {
   margin: 0 auto;
   margin-top: 20px;
   color: #fff;
   font-size: 20px;
-  line-height: 150%;
+  line-height: 130%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 15px;
 }
 
-#mat #command, #battle_command {
+#mat #playerInfo, #battle_command {
   background-color: #000a;
   border-radius: 20px;
   border: solid 5px #fff;
 }
 
-#mat #command .command, #battle_command .command {
+#mat #playerInfo .command, #battle_command .command {
   cursor: pointer;
 }
 

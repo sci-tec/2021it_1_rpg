@@ -2,7 +2,7 @@ import G from './common/global.js'
 import { CONFIG } from './common/config.js'
 
 import { field_init, field_keyDown } from './field/field.js'
-import { battle_init, battle_keyDown } from './battle/battle.js'
+import { battle_init, battle_keyDown, addExp } from './battle/battle.js'
 import { story_init, story_keyDown } from './story/story.js'
 import { talk_init, talk_keyDown } from './talk/talk.js'
 import { shop_init, shop_keyDown } from './shop/shop.js'
@@ -25,6 +25,8 @@ function init() {
         default : break;
     }
     G.refresh = refresh; // リフレッシュ関数をどこからでも使えるように
+    G.addExp = addExp;
+    G.devConsole = devConsole;
     refresh();
 
     addEventListener( "keydown", keydown );

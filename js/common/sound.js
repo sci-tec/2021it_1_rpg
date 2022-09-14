@@ -46,7 +46,7 @@ export function playSE(id) {
     }
     let filepath = BASE_DIR + sounds.se[id].file;
     se = new Audio(filepath);
-    se.play()
+    // se.play()
 }
 export function playBGM(id) {
     if(audio) {
@@ -65,7 +65,7 @@ export function playBGM(id) {
         }, false);
     }
 
-    audio.play()
+    // audio.play()
 }
 export function stopBGM() {
     // audio.stop();
@@ -75,7 +75,7 @@ export function stopBGM() {
 export function stopSE() {
     // se.stop();
     se.pause();
-    se.currentTime = 0;    
+    se.currentTime = 0;
 }
 
 

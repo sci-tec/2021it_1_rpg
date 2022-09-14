@@ -1,12 +1,63 @@
 import G from '../common/global.js'
 import { CONFIG } from '../common/config.js';
 
-export function battle_init(option) {
-    $("#mat").show();
-    console.log(option);
-    G.playBGM("zakosen");
+
+let enemyId;
+let option;
+
+
+export function battle_init(op) {
     addEventListeners();
+    option = op;
+    refreshBattleScene(option);
 }
+
+function refreshBattleScene(op) {
+    let dom = getScene();
+    $("#mat").html(dom).show();
+    console.log(op);
+    G.playBGM("zakosen");
+}
+
+
+function getScene() {
+
+    let dom = `
+        <div id="playerInfo">
+            ゆうしゃ<br>
+            LV: ${G.level}<br>
+            HP: ${G.hp}<br>
+            MP: ${G.mp}<br>
+        </div>
+        <div id="battle" class="screensize">
+            <div id="enemy">
+                <img src="images/enemy/31.png" />
+            </div>
+            <div id="message">
+                ボスがあらわれた！<br>
+                ５５５5ポイントのダメージを与えた
+            </div>
+        
+            <div id="battle_command">
+                <div class="commands">
+                    <div id="cmd1" data-se="ken_atk3" class="command">たたかう</div>
+                    <div id="cmd2" data-se="Openmenu" class="command">どうぐ</div>
+                    <div id="cmd3" data-se="escape" class="command">にげる</div>
+                </div>
+            </div>
+            <!-- <div id="battle_command">
+                こうげき<br>
+                とくぎ<br>
+                まほう<br>
+                ぼうぎょ<br>
+            </div> -->
+        </div>`;
+
+    return dom;
+
+}
+
+
 
 
 function addEventListeners() {
@@ -54,6 +105,25 @@ export function battle_keyDown(code) {
         default:
             break;
     }
+}
+
+export let addExp = (num) => {
+    let lv_old = getLevelByExp(G.exp);
+    G.exp = Math.min(G.exp + num, G.DATA.LEVELS[G.DATA.LEVELS.length-1].exp);
+    G.level = getLevelByExp(G.exp);
+    G.devConsole();
+    if(lv_old != G.level) {
+        G.playSE("kaihuku");
+    }
+}
+
+function getLevelByExp(num) {
+    for(let i=0; i<G.DATA.LEVELS.length; i++) {
+        if(G.DATA.LEVELS[i].exp > num) {
+            return G.DATA.LEVELS[i-1].lv;
+        }
+    }
+    return G.DATA.LEVELS[G.DATA.LEVELS.length-1].lv;
 }
 
 export const BUTTLE = {

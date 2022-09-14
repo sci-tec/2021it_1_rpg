@@ -9,6 +9,10 @@ export default {
         char: document.querySelector("#canvasChar").getContext("2d")
     },
     DATA: data,
+    exp: 0,
+    level: 1,
+    hp: 0,
+    mp: 0,
     player: null,
     player_x: 0,
     player_y: 0,
