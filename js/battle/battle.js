@@ -23,34 +23,37 @@ function refreshBattleScene(op) {
 function getScene() {
 
     let dom = `
-        <div id="playerInfo">
-            ゆうしゃ<br>
-            LV: ${G.level}<br>
-            HP: ${G.hp}<br>
-            MP: ${G.mp}<br>
-        </div>
-        <div id="battle" class="screensize">
-            <div id="enemy">
-                <img src="images/enemy/31.png" />
-            </div>
-            <div id="message">
-                ボスがあらわれた！<br>
-                ５５５5ポイントのダメージを与えた
-            </div>
-        
-            <div id="battle_command">
-                <div class="commands">
-                    <div id="cmd1" data-se="ken_atk3" class="command">たたかう</div>
-                    <div id="cmd2" data-se="Openmenu" class="command">どうぐ</div>
-                    <div id="cmd3" data-se="escape" class="command">にげる</div>
+        <div id="battle2" class="screensize">
+
+            <div class="container">
+                <div id="upper">
+                    <div id="enemy">
+                        <img src="images/enemy/31.png" />
+                    </div>
+                    <div id="playerInfo">
+                        ゆうしゃ<br>
+                        LV: ${G.level}<br>
+                        HP: ${G.hp}<br>
+                        MP: ${G.mp}<br>
+                    </div>
+                    <div id="commands">
+                        <div id="cmd1" data-se="ken_atk3" class="command">たたかう</div>
+                        <div id="cmd2" data-se="Openmenu" class="command">どうぐ</div>
+                        <div id="cmd3" data-se="escape" class="command">にげる</div>
+                    </div>
+                    <!-- <div id="battle_command">
+                        こうげき<br>
+                        とくぎ<br>
+                        まほう<br>
+                        ぼうぎょ<br>
+                    </div> -->
                 </div>
+                <div id="message">
+                    ボスがあらわれた！<br>
+                    ５５５5ポイントのダメージを与えた
+                </div>
+
             </div>
-            <!-- <div id="battle_command">
-                こうげき<br>
-                とくぎ<br>
-                まほう<br>
-                ぼうぎょ<br>
-            </div> -->
         </div>`;
 
     return dom;
