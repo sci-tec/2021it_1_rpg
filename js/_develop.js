@@ -28,10 +28,10 @@ export function develop() {
 
     document.addEventListener("copy" , listener);
 
-    let tm = setInterval(()=>{
-        showEnemy(1);
-        clearInterval(tm);
-    }, 10)
+    // let tm = setInterval(()=>{
+    //     showEnemy(1);
+    //     clearInterval(tm);
+    // }, 10)
 
 }
 
