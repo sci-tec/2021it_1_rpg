@@ -45,6 +45,13 @@ function showMessageById(id) {
     currentMessageIdx = id;
     let msg = G.DATA.STORY[currentId][id];
     console.log(msg);
+    if(msg.image) {
+        if(msg.image == "-") {
+            $("#mat_story .img img").attr('src', ``);
+        } else {
+            $("#mat_story .img img").attr('src', `/images/story/${msg.image}`);
+        }
+    }
     $("#mat_story .messageblock").html(msg.text);
 }
 function nextMessage() {
