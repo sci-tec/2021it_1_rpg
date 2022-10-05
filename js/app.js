@@ -31,6 +31,11 @@ function init() {
 
     addEventListener( "keydown", keydown );
 
+    $("#mat_title .container").click(()=>{
+        $("#mat_title").remove();
+        // story_init();
+    });
+
 }
 
 function keydown( event ) {
@@ -51,9 +56,11 @@ function refresh(mode = G.currentMode, option = {}) {
     $("#talk").hide();
     $("#mat").hide();
     $("#mat_shop").hide();
+    $("#mat_story").hide();
     // console.log("refresh", option, G.currentMode);
     switch(G.currentMode) {
         case CONFIG.MODE_STORY: 
+            story_init(option);
             break;
         case CONFIG.MODE_FIELD: 
             // field_init(option)

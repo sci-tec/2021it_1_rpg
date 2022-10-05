@@ -21,6 +21,9 @@ export function develop() {
     $("#ui #enemy1").click((e)=>{ showEnemy(1);});
     $("#ui #enemy2").click((e)=>{ showEnemy(2);});
 
+    $("#ui #msg_id1").click((e)=>{ showStory(1); e.currentTarget.blur() });
+    $("#ui #msg_id2").click((e)=>{ showStory(2); e.currentTarget.blur() });
+
     var listener = function(e){
         e.clipboardData.setData("text/plain" , getCopyString());    
         e.preventDefault();
@@ -44,7 +47,14 @@ function getCopyString(to = "行き先マップID") {
     return `{ x: ${G.player_x}, y: ${G.player_y}, goto: { name: '${to}', x: 0, y: 0 }},`;
 }
 
-export function showEnemy(id) {
+function showStory(id) {
     let op1 = { id: id }
+    console.log(op1);
+    G.refresh(CONFIG.MODE_STORY, op1);
+}
+
+export function showEnemy(id) {
+    let op1 = { id: id };
     G.refresh(CONFIG.MODE_BATTLE, op1);
 }
+
