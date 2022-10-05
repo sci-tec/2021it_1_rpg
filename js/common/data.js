@@ -1,7 +1,9 @@
 import TALK from './talk/talk.js'
+import STORY from './data/storyContents.js'
 
 export default {
     TALK: TALK,
+    STORY: STORY,
 
     LEVELS: [
 

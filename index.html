@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
@@ -79,9 +80,24 @@
                     <button id="addEXP1">経験値1追加</button>
                     <button id="addEXP10">経験値10追加</button>
                     <button id="addEXP50">経験値50追加</button>
+                    <button id="msg_id1">MSG 1</button>
+                    <button id="msg_id2">MSG 2</button>
                 </div>
             </div>
         </div>
+
+        <div id="mat_story" class="overlay">
+            <div class="img"><img src="/images/story/1_01.png" alt=""></div>
+            <div class="messageblock"></div>
+        </div>
+
+        <div id="mat_title">
+            <div class="container">
+                <img src="./images/rpg_logo.png" alt="">
+                <div id="btnTitleClick">CLICK</div>
+            </div>
+        </div>
+
     </div>
     <script type="module" src="js/app.js"></script>
 </body>
