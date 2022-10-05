@@ -29,7 +29,7 @@
 
 
 
-        <div id="mat" class="overlay" style="">
+        <div id="mat" class="overlay" >
             <div id="playerInfo">
                 ゆうしゃ<br>
                 LV: 1<br>
@@ -64,10 +64,39 @@
         
         <div id="mat_shop" class="overlay">
             <div id="shop" class="screensize">
-                <h1>ショップ</h1>
-                <div>ショップです</div>
+                <div class="container">
+                    <div id="upper">
+                        <div id="itemlist">
+                            だみー
+                        </div>
+
+                        <div id="many">
+                            ゆうしゃ<br>
+                            LV: ${G.level}<br>
+                            HP: ${G.hp}<br>
+                            MP: ${G.mp}<br>
+                        </div>
+
+                        <div id="upper_right">
+                            <div id="itemstatus">
+                                <div id="cmd1" data-se="ken_atk3" class="command">たたかう</div>
+                                <div id="cmd2" data-se="Openmenu" class="command">どうぐ</div>
+                                <div id="cmd3" data-se="escape" class="command">にげる</div>
+                            </div>
+                            <div id="itemimage"><img src="images/enemy/31.png"></div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div id="message">
+                        ボスがあらわれた！<br>
+                        ５５５5ポイントのダメージを与えた
+                    </div>
+    
+                </div>
             </div>
         </div>
+
         <div id="ui" class="overlay">
             <div>
                 <div id="consoleContainer">
