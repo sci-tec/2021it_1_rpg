@@ -24,6 +24,8 @@ export function develop() {
     $("#ui #msg_id1").click((e)=>{ showStory(1); e.currentTarget.blur() });
     $("#ui #msg_id2").click((e)=>{ showStory(2); e.currentTarget.blur() });
 
+    $("#ui #shop1").click((e)=>{ showShop(1); e.currentTarget.blur() });
+
     var listener = function(e){
         e.clipboardData.setData("text/plain" , getCopyString());    
         e.preventDefault();
@@ -45,6 +47,12 @@ export function devConsole() {
 
 function getCopyString(to = "行き先マップID") {
     return `{ x: ${G.player_x}, y: ${G.player_y}, goto: { name: '${to}', x: 0, y: 0 }},`;
+}
+
+function showShop(id) {
+    let op1 = { id: id }
+    console.log(op1);
+    G.refresh(CONFIG.MODE_SHOP, op1);
 }
 
 function showStory(id) {
