@@ -1,3 +1,82 @@
 #shop {
-    background-color: #2005;
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+    .container {
+        height: 500px;
+    
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 160px;
+        #upper{
+           
+            height: 70%;
+            position: relative;
+              
+            #itemlist{
+                background-color: #000a;
+                border-radius:  20px;
+                border: solid 5px #fff;
+                top: 50px;
+                width: 400px;
+                height: 250px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                box-sizing: border-box;
+                padding: 5px;
+            }
+            #many{
+                font-size: 25px;
+                width: 150px;
+                position: absolute;
+                left: 80px;
+                top: 50px;
+                height: 120px;
+                background-color: #000a;
+                border-radius:  20px;
+                border: solid 5px #fff;
+                box-sizing: border-box;
+                padding: 5px;
+            }
+            #upper_right{
+               
+                position: absolute;
+                right: 90px;
+                height: 200px;
+                width: 150px;
+                top: 50px;
+                #itemstatus{
+                    height: 120px;
+                    width: 200px;
+                    background-color: #000a;
+                    border-radius: 20px;
+                    border: solid 5px #fff;
+                    box-sizing: border-box;
+                    padding: 5px;
+                    font-size: 25px;
+
+                }
+                #itemimage{
+                    margin-top: 45px;
+                    background-color: #000a;
+                    border-radius:  20px;
+                    border: solid 5px #fff;
+                    text-align: center;
+                    
+                }
+            }
+        }
+            
+        #message{
+            background-color: #000a;
+            border-radius:  20px;
+            border: solid 5px #fff;
+            width: 60%;
+            margin: 0 auto;
+            height: 30%;
+
+        }
+    }
+        
 }
