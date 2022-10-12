@@ -65,11 +65,16 @@
                             max-width: 240px;
                             padding: 5px 10px;
                             color: #313131;
-                            transition: 0.3s ease-in-out;
+                            //transition: 0.3s ease-in-out;
                             font-weight: 600;
                             background: #eee;
                             filter: drop-shadow(0px 2px 4px #ccc);
                             border-radius: 3px;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #f00;
+                            }
+
                         }
                         
                     }
