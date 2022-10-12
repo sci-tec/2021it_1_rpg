@@ -195,8 +195,72 @@ html, body {
   height: 100%;
 }
 
-#buttle2 #playerInfo2 {
-  width: 0px;
+#battle2 .container {
+  position: relative;
+  background-color: #f7ad0ecc;
+  width: 800px;
+  height: 450px;
+}
+
+#battle2 .container #upper {
+  position: relative;
+  height: 100%;
+}
+
+#battle2 .container #upper #enemy {
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #000a;
+  border-radius: 20px;
+  border: solid 5px #fff;
+  width: 400px;
+  height: 250px;
+}
+
+#battle2 .container #upper #enemy img {
+  width: 60%;
+}
+
+#battle2 .container #upper #playerInfo {
+  width: 150px;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  margin: 0;
+}
+
+#battle2 .container #upper #commands {
+  position: absolute;
+  right: 40px;
+  top: 80px;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100px;
+  height: 120px;
+  color: #FFF;
+  background-color: #000a;
+  border-radius: 20px;
+  border: solid 5px #fff;
+}
+
+#battle2 .container #message {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 20px;
+  border: solid 5px #fff;
+  color: #fff;
+  background-color: #000;
+  width: 500px;
+  height: 100px;
 }
 
 #mat_story {
