@@ -1,5 +1,4 @@
 #shop {
-
     height: 100%;
     color: #fff;
     font-size: 30px;
@@ -8,19 +7,17 @@
     align-items: center;
 
     .container {
-
         height: 500px;
         width: 800px;
-       // margin: 0 auto;
+        //margin: 0 auto;
         //margin-top: 160px;
 
-        #upper{
-
+        #upper{ 
             height: 70%;
             position: relative;
-              
+            
             #itemlist{
-
+                display: flex;
                 background-color: #000a;
                 border-radius: 20px;
                 border: solid 5px #fff;
@@ -34,10 +31,53 @@
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
                 padding: 5px;
+                overflow-y: scroll;
+                flex-direction: column;
+                
+
+                
+                .item{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #fff8;
+
+                    .left{
+                        display: flex;
+                        align-items: center;
+
+                        .image{
+                            img{
+                             width: 70px;   
+                            }
+                            
+                        }   
+                    }
+                    .G{
+                        display: flex;
+                        align-items: center; 
+                        .buy{
+                            position: relative;
+                            display: flex; 
+                            align-items: center;   
+                            justify-content: space-around;
+                            margin: 0 auto;
+                            max-width: 240px;
+                            padding: 5px 10px;
+                            color: #313131;
+                            transition: 0.3s ease-in-out;
+                            font-weight: 600;
+                            background: #eee;
+                            filter: drop-shadow(0px 2px 4px #ccc);
+                            border-radius: 3px;
+                        }
+                        
+                    }
+                }
+                
 
             }
             #many{
-
                 font-size: 25px;
                 width: 150px;
                 position: absolute;
@@ -52,8 +92,8 @@
                 padding: 5px;
 
             }
+
             #upper_right{
-               
                 position: absolute;
                 right: -20px;
                 height: 200px;
@@ -61,7 +101,6 @@
                 top: 50px;
 
                 #itemstatus{
-
                     height: 120px;
                     width: 200px;
                     background-color: #000a;
@@ -74,7 +113,6 @@
                 }
 
                 #itemimage{
-
                     margin-top: 15px;
                     background-color: #000a;
                     border-radius: 15px;
@@ -87,7 +125,6 @@
         }
             
         #message{
-
             background-color: #000a;
             border-radius: 20px;
             border: solid 5px #fff;
