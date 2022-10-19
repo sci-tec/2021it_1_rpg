@@ -64,7 +64,7 @@ function refresh(mode = G.currentMode, option = {}) {
             break;
         case CONFIG.MODE_FIELD: 
             // field_init(option)
-        break;
+            break;
         case CONFIG.MODE_BATTLE: 
             battle_init(option)
             break;
