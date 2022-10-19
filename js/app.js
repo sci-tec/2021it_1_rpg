@@ -5,7 +5,7 @@ import { field_init, field_keyDown } from './field/field.js'
 import { battle_init, battle_keyDown, addExp } from './battle/battle.js'
 import { story_init, story_keyDown } from './story/story.js'
 import { talk_init, talk_keyDown } from './talk/talk.js'
-import { shop_init, shop_keyDown } from './shop/shop.js'
+import { shop_init, shop_keyDown,shop_show_message } from './shop/shop.js'
 
 import { develop, devConsole } from './_develop.js'
 
