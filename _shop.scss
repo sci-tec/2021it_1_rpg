@@ -56,6 +56,7 @@
                     .G{
                         display: flex;
                         align-items: center; 
+                        
                         .buy{
                             position: relative;
                             display: flex; 
@@ -82,7 +83,8 @@
                 
 
             }
-            #many{
+
+            #money{
                 font-size: 25px;
                 width: 150px;
                 position: absolute;
@@ -106,8 +108,8 @@
                 top: 50px;
 
                 #itemstatus{
-                    height: 120px;
-                    width: 200px;
+                    height: 150px;
+                    width: 150px;
                     background-color: #000a;
                     border-radius: 20px;
                     border: solid 5px #fff;
@@ -123,7 +125,14 @@
                     border-radius: 15px;
                     border: solid 5px #fff;
                     text-align: center;
-                    width: 190px;
+                    box-sizing: border-box;
+                    width: 150px;
+                    height: 150px;
+                    
+                    img{
+                        width: 100%;
+
+                    }
                     
                 }
             }
