@@ -5,7 +5,13 @@ export function shop_init(option) {
     $("#mat_shop").show();
     // console.log(option);
     // G.playBGM("zakosen");
-    // addEventListeners();
+     addEventListeners();
+}
+function addEventListeners() {
+    $("#itemlist .item .buy").click((e)=>{
+        console.log("test");
+        $("#upper_right #itemimage img").attr("src","images/soubi/icon087.png");
+    })
 }
 
 export function shop_keyDown(code) {
