@@ -6,6 +6,11 @@ import { refreshMap } from './field/field.js'
 // import { story_init, story_keyDown } from './story/story.js'
 
 export function develop() {
+
+    $("#toggleDevPanel").click(()=>{
+        $("#consoleContainer").toggle();
+    })
+
     $("#ui .btnDev").click(()=>{
         refreshMap("test", 4, 6);
     });

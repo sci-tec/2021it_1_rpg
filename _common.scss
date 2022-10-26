@@ -48,6 +48,12 @@ html, body {
         height: 100%;
     }
     #ui {
+        #toggleDevPanel {
+            width: 20px;
+            height: 20px;
+            background-color: #fff3;
+            cursor: pointer;
+        }
         position: fixed;
         top: 0;
         left: 0;
