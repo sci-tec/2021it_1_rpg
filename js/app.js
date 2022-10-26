@@ -8,6 +8,7 @@ import { talk_init, talk_keyDown } from './talk/talk.js'
 import { shop_init, shop_keyDown } from './shop/shop.js'
 
 import { develop, devConsole } from './_develop.js'
+import { menu_init } from './menu/menu.js'
 
 $(function(){
     develop();
@@ -57,6 +58,7 @@ function refresh(mode = G.currentMode, option = {}) {
     $("#mat").hide();
     $("#mat_shop").hide();
     $("#mat_story").hide();
+    $("#mat_menu").hide();
     // console.log("refresh", option, G.currentMode);
     switch(G.currentMode) {
         case CONFIG.MODE_STORY: 
@@ -73,6 +75,9 @@ function refresh(mode = G.currentMode, option = {}) {
             break;
         case CONFIG.MODE_SHOP: 
             shop_init(option)
+            break;
+        case CONFIG.MODE_MENU: 
+            menu_init()
             break;
         default : 
             break;

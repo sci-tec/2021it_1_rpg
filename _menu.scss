@@ -1,0 +1,56 @@
+#menu {
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        width: 800px;
+        height: 500px;
+        .commands {
+            width: 190px;
+            background-color: #000a;
+            border-radius: 20px;
+            border: solid 5px #fff;
+            box-sizing: border-box;
+            height: 190px;
+            padding: 20px 15px;
+        }
+        .status {
+            background-color: #000a;
+            border-radius: 20px;
+            border: solid 5px #fff;
+            width: 550px;
+            .status_top {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+                box-sizing: border-box;
+                padding-bottom: 10px;
+                border-bottom: 5px solid #FFF;
+                img {
+                    width: 90px;
+                }
+                .names {
+                    margin-top: 5px;
+                    .level {
+                        text-align: end;
+                        font-size: 35px;
+                    }
+                }
+                .state {
+                    font-size: 40px;
+                }
+            }
+            .status_bottom {
+                display: flex;
+                justify-content: space-around;
+                box-sizing: border-box;
+                padding: 15px 20px;
+            }
+        }
+    }
+}

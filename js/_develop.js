@@ -25,6 +25,7 @@ export function develop() {
     $("#ui #msg_id2").click((e)=>{ showStory(2); e.currentTarget.blur() });
 
     $("#ui #shop1").click((e)=>{ showShop(1); e.currentTarget.blur() });
+    $("#ui #menu1").click((e)=>{ showMenu(1); e.currentTarget.blur() });
 
     var listener = function(e){
         e.clipboardData.setData("text/plain" , getCopyString());    
@@ -53,6 +54,12 @@ function showShop(id) {
     let op1 = { id: id }
     console.log(op1);
     G.refresh(CONFIG.MODE_SHOP, op1);
+}
+
+function showMenu(id) {
+    let op1 = { id: id }
+    console.log(op1);
+    G.refresh(CONFIG.MODE_MENU, op1);
 }
 
 function showStory(id) {
