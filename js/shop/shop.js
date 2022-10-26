@@ -6,13 +6,31 @@ export function shop_init(option) {
     // console.log(option);
     // G.playBGM("zakosen");
      addEventListeners();
+     $("#money .Lv").html(`Lv: ${G.level}`);
+
 }
 function addEventListeners() {
+    let img = ["images/soubi/icon001.png", "images/soubi/icon003.png", "images/soubi/icon008.png", "images/soubi/icon018.png", "images/soubi/icon054.png", "images/soubi/icon057.png", "images/soubi/icon066.png", "images/soubi/icon072.png", "images/soubi/icon087.png"];
     $("#itemlist .item .buy").click((e)=>{
+        let buyid = e.target.id.slice(-1);
         console.log("test");
-        $("#upper_right #itemimage img").attr("src","images/soubi/icon087.png");
+        $("#upper_right #itemimage img").attr("src", img[buyid] );
+        
+
+        shop_show_message(`~~~をかいますか？<br>
+        <h1>
+            <a href="#" class="btn">はい</a>
+            <a href="#" class="btn">いいえ</a>
+        </h1>`)
     })
+   
+
+    // addEventListeners();
+    let greeting ="いらっしゃいませ";
+    shop_show_message(greeting);
+
 }
+
 
 export function shop_keyDown(code) {
     switch(code) {
@@ -32,3 +50,16 @@ export function shop_keyDown(code) {
             break;
     }
 }
+ export function shop_show_message(msg){
+     $("#shop #message").html(msg);
+ }
+
+ 
+ 
+ //メッセージ呼び出しの関数
+ export function shop_show_message_call(msgc) {
+     $("#shop #message").click(function(){shop_show_message(msgc)})
+ }
+ 
+ 
+
