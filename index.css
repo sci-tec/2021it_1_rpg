@@ -233,14 +233,40 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+}
+
+#mat_story .img {
+  background-color: #000a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 #mat_story .messageblock {
   position: absolute;
   bottom: 50px;
   left: 50px;
   color: #fff;
+<<<<<<< Updated upstream
   background-color: rgba(255, 255, 255, 0.3333333333);
   width: calc(100% - 100px);
+=======
+  background-color: #000c;
+  width: calc( 100% - 100px);
+>>>>>>> Stashed changes
   font-size: 40px;
   word-break: break-all;
   padding: 10px 20px;
@@ -380,6 +406,7 @@ html, body {
   margin: 0 auto;
   height: 30%;
 }
+<<<<<<< Updated upstream
 #shop .container #message #h1 {
   display: flex;
   justify-content: center;
@@ -441,3 +468,15 @@ html, body {
   box-sizing: border-box;
   padding: 15px 20px;
 }/*# sourceMappingURL=index.css.map */
+=======
+
+#shop .container #message #h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=index.css.map */
+>>>>>>> Stashed changes

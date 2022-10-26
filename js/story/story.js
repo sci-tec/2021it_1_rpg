@@ -46,10 +46,17 @@ function showMessageById(id) {
     let msg = G.DATA.STORY[currentId][id];
     console.log(msg);
     if(msg.image) {
+        // if(msg.image == "-") {
+        //     $("#mat_story .img img").attr('src', ``);
+        // } else {
+        //     $("#mat_story .img img").attr('src', `/images/story/${msg.image}`);
+        // }
         if(msg.image == "-") {
             $("#mat_story .img img").attr('src', ``);
         } else {
-            $("#mat_story .img img").attr('src', `/images/story/${msg.image}`);
+            // $("#mat_story .img").attr('style', `/images/story/${msg.image}`);
+            $("#mat_story .img").css('background-image', `url('/images/story/${msg.image}')`);
+            $("#mat_story").css('background-image', `url('/images/story/${msg.image}')`);
         }
     }
     $("#mat_story .messageblock").html(msg.text);
