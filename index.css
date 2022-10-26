@@ -1,0 +1,507 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'MyFont';
+  src: url("fonts/PixelMplus10-Regular.ttf");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: MyFont;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+.container #world {
+  position: relative;
+}
+
+.container #world .canvas, .container #world .screensize {
+  position: absolute;
+}
+
+.container #world {
+  position: fixed;
+  top: 50px;
+  left: 0;
+}
+
+.container #mat {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0007;
+  width: 100%;
+  height: 100%;
+}
+
+.container #talk {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container #ui {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container #ui #consoleContainer {
+  margin: 15px;
+  padding: 20px;
+  color: #fff;
+  font-size: 24px;
+  background-color: #000a;
+  border-radius: 10px;
+  border: solid 2px #fff;
+}
+
+.container #ui #consoleContainer #tagForCopy {
+  margin-bottom: 10px;
+}
+
+#mat, #talk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* 子要素をflexboxで揃える */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* 子要素をflexboxにより縦方向に揃える */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* 子要素をflexboxにより中央に配置する */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* 子要素をflexboxにより中央に配置する */
+  width: 100%;
+  height: 100%;
+}
+
+#mat #battle #enemy, #mat #battle #message {
+  background-color: #000a;
+  border-radius: 20px;
+  border: solid 5px #fff;
+}
+
+#mat #battle #enemy {
+  width: 280px;
+  height: 240px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#mat #battle #enemy img {
+  width: 100%;
+  height: 100%;
+}
+
+#mat #battle #message {
+  width: 400px;
+  height: 160px;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 150%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+}
+
+#mat #playerInfo {
+  position: relative;
+  top: 200px;
+  right: 250px;
+  font-size: 25px;
+  width: auto;
+}
+
+#mat #battle_command {
+  position: relative;
+  height: auto;
+  bottom: 180px;
+  right: 280px;
+  width: 140px;
+}
+
+#mat #battle #message, #playerInfo, #battle_command {
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 130%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+#mat #playerInfo, #battle_command {
+  background-color: #000a;
+  border-radius: 20px;
+  border: solid 5px #fff;
+}
+
+#mat #playerInfo .command, #battle_command .command {
+  cursor: pointer;
+}
+
+#talk #battle #enemy, #talk #battle #message {
+  background-color: #000a;
+  border-radius: 20px;
+  border: solid 5px #fff;
+}
+
+#talk #battle #enemy {
+  opacity: 0;
+  width: 280px;
+  height: 240px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#talk #battle #enemy img {
+  width: 100%;
+  height: 100%;
+}
+
+#talk #battle #message {
+  width: 400px;
+  height: 160px;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 150%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+}
+
+#mat_shop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0007;
+  width: 100%;
+  height: 100%;
+}
+
+#battle2 .container {
+  position: relative;
+  background-color: #f7ad0ecc;
+  width: 800px;
+  height: 450px;
+}
+
+#battle2 .container #upper {
+  position: relative;
+  height: 100%;
+}
+
+#battle2 .container #upper #enemy {
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #000a;
+  border-radius: 20px;
+  border: solid 5px #fff;
+  width: 400px;
+  height: 250px;
+}
+
+#battle2 .container #upper #enemy img {
+  width: 60%;
+}
+
+#battle2 .container #upper #playerInfo {
+  width: 150px;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  margin: 0;
+}
+
+#battle2 .container #upper #commands {
+  position: absolute;
+  right: 40px;
+  top: 80px;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100px;
+  height: 120px;
+  color: #FFF;
+  background-color: #000a;
+  border-radius: 20px;
+  border: solid 5px #fff;
+}
+
+#battle2 .container #message {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 20px;
+  border: solid 5px #fff;
+  color: #fff;
+  background-color: #000;
+  width: 500px;
+  height: 100px;
+}
+
+#mat_story {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+}
+
+#mat_story .img {
+  background-color: #000a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#mat_story .messageblock {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: #fff;
+  background-color: #000c;
+  width: calc( 100% - 100px);
+  font-size: 40px;
+  word-break: break-all;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#mat_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mat_title .container {
+  text-align: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+#shop {
+  height: 100%;
+  color: #fff;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shop .container {
+  height: 500px;
+  width: 800px;
+}
+
+#shop .container #upper {
+  height: 70%;
+  position: relative;
+}
+
+#shop .container #upper #itemlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000a;
+  border-radius: 20px;
+  border: solid 5px #fff;
+  top: 50px;
+  width: 490px;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  overflow-y: scroll;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#shop .container #upper #itemlist .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #fff8;
+}
+
+#shop .container #upper #itemlist .item .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shop .container #upper #itemlist .item .left .image img {
+  width: 70px;
+}
+
+#shop .container #upper #itemlist .item .G {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shop .container #upper #itemlist .item .G .buy {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  max-width: 240px;
+  padding: 5px 10px;
+  color: #313131;
+  font-weight: 600;
+  background: #eee;
+  -webkit-filter: drop-shadow(0px 2px 4px #ccc);
+          filter: drop-shadow(0px 2px 4px #ccc);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#shop .container #upper #itemlist .item .G .buy:hover {
+  background-color: #f00;
+}
+
+#shop .container #upper #money {
+  font-size: 25px;
+  width: 150px;
+  position: absolute;
+  left: -15px;
+  top: 50px;
+  height: 120px;
+  background-color: #000a;
+  border-radius: 20px;
+  border: solid 5px #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+#shop .container #upper #upper_right {
+  position: absolute;
+  right: -20px;
+  height: 200px;
+  width: 150px;
+  top: 50px;
+}
+
+#shop .container #upper #upper_right #itemstatus {
+  height: 150px;
+  width: 150px;
+  background-color: #000a;
+  border-radius: 20px;
+  border: solid 5px #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+  font-size: 25px;
+}
+
+#shop .container #upper #upper_right #itemimage {
+  margin-top: 15px;
+  background-color: #000a;
+  border-radius: 15px;
+  border: solid 5px #fff;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+}
+
+#shop .container #upper #upper_right #itemimage img {
+  width: 100%;
+}
+
+#shop .container #message {
+  background-color: #000a;
+  border-radius: 20px;
+  border: solid 5px #fff;
+  width: 480px;
+  margin: 0 auto;
+  height: 30%;
+}
+
+#shop .container #message #h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=index.css.map */
