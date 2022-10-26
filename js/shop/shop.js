@@ -16,9 +16,21 @@ function addEventListeners() {
         console.log("test");
         $("#upper_right #itemimage img").attr("src", img[buyid] );
         
+
+        shop_show_message(`~~~をかいますか？<br>
+        <h1>
+            <a href="#" class="btn">はい</a>
+            <a href="#" class="btn">いいえ</a>
+        </h1>`)
     })
+   
+
+    // addEventListeners();
+    let greeting ="いらっしゃいませ";
+    shop_show_message(greeting);
 
 }
+
 
 export function shop_keyDown(code) {
     switch(code) {
@@ -38,3 +50,16 @@ export function shop_keyDown(code) {
             break;
     }
 }
+ export function shop_show_message(msg){
+     $("#shop #message").html(msg);
+ }
+
+ 
+ 
+ //メッセージ呼び出しの関数
+ export function shop_show_message_call(msgc) {
+     $("#shop #message").click(function(){shop_show_message(msgc)})
+ }
+ 
+ 
+
