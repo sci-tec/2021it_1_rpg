@@ -30,30 +30,37 @@
 
 
         <div id="mat" class="overlay" >
-            <div id="playerInfo">
-                ゆうしゃ<br>
-                LV: 1<br>
-                HP: 0<br>
-                MP: 0<br>
-            </div>
-            <div id="battle" class="screensize">
-                <div id="enemy">
-                    <img src="images/enemy/31.png">
-                </div>
-                <div id="message">
-                    ボスがあらわれた！<br>
-                    ５５５5ポイントのダメージを与えた
-                </div>
-            
-                <div id="battle_command">
+        </div>
+        <div id="mat_menu" class="overlay">
+            <div id="menu" class="screensize">
+                <div class="container">
                     <div class="commands">
-                        <div id="cmd1" data-se="ken_atk3" class="command">たたかう</div>
-                        <div id="cmd2" data-se="Openmenu" class="command">どうぐ</div>
-                        <div id="cmd3" data-se="escape" class="command">にげる</div>
+                        アイテム<br>
+                        じゅもん<br>
+                        そうび<br>
+                        ステータス<br>
+                    </div>
+                    <div class="status">
+                        <div class="status_top">
+                            <img src="images/player/player_D_1.png" alt="">
+                            <div class="names">
+                                <div class="name">ゆうしゃ</div>
+                                <div class="level">Lv 2</div>
+                            </div>
+                            <div class="state">
+                                <div class="Hp">HP: 10</div>
+                                <div class="Mp">MP: 10</div>
+                            </div>
+                        </div>
+                        <div class="status_bottom">
+                            <div class="line1">こいげき: 10</div>
+                            <div class="line2">ぼうぎょ: 20</div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
 
 
         
@@ -218,6 +225,7 @@
                     <button id="addEXP50">経験値50追加</button>
                     <button id="msg_id1">MSG 1</button>
                     <button id="msg_id2">MSG 2</button>
+                    <button id="menu1">メニュー</button>
                 </div>
             </div>
         </div>

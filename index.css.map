@@ -7,7 +7,8 @@
         "_buttle.scss",
         "_story.scss",
         "_title.scss",
-        "_shop.scss"
+        "_shop.scss",
+        "_menu.scss"
     ],
     "names": [],
     "file": "index.css"

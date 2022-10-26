@@ -9,5 +9,6 @@ export const CONFIG = {
     MODE_BATTLE: "battle",
     MODE_TALK: "talk",
     MODE_SHOP: "shop",
+    MODE_MENU: "menu",
 }
 
